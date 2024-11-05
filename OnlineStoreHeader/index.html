@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700" />
+    
+    <title>Responsive Landing Page</title>
+  </head>
+  <body>
+ <!-- Main Container -->
+ <div class="primary-content-container">
+  <!-- Navbar Section -->
+  <nav class="navbar">
+      <div class="flex-row-container">
+          <img src="assets/image_29e27673.png" alt="SellerSquad Logo" class="squad-logo" />
+          <p class="squad-title">SellerSquad</p>
+      </div>
+
+      <div class="horizontal-menu-container">
+          <p class="primary-text-style">PRODUCT</p>
+          <p class="primary-text-style">SOLUTION</p>
+          <p class="primary-text-style">RESOURCES</p>
+          <p class="primary-text-style">COMPANY</p>
+          <p class="primary-text-style">PRICING</p>
+      </div>
+
+      <!-- Hamburger Icon for mobile view -->
+      <div class="hamburger" id="hamburger" onclick="toggleMobileMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+  </nav>
+
+  <!-- Mobile Menu (Hidden by default) -->
+  <div class="mobile-menu" id="mobile-menu">
+      <p class="primary-text-style">PRODUCT</p>
+      <p class="primary-text-style">SOLUTION</p>
+      <p class="primary-text-style">RESOURCES</p>
+      <p class="primary-text-style">COMPANY</p>
+      <p class="primary-text-style">PRICING</p>
+      <button class="nav-button mobile-nav-button">Get Started</button>
+  </div>
+</div>
+
+<script>
+  // Toggle mobile menu
+  function toggleMobileMenu() {
+      const mobileMenu = document.getElementById("mobile-menu");
+      mobileMenu.classList.toggle("active");
+  }
+
+  // Hide mobile menu on window resize
+  window.addEventListener('resize', function() {
+      const mobileMenu = document.getElementById("mobile-menu");
+      if (window.innerWidth > 768) {
+          mobileMenu.classList.remove("active"); // Hide mobile menu if screen is larger than 768px
+      }
+  });
+</script>
+
+      <!-- Hero Section -->
+      <div class="shop-management-layout">
+        <div class="shop-management-container">
+          <div class="shop-management-software-section">
+            <h1 class="hero-title-text-style">
+              The all-in-one shop<br />management<br />software.
+            </h1>
+            <p class="cloud-based-solution-description">
+              Say goodbye to clunky shop management software<br />
+              and the chaos of paper and pen. Work faster and<br />
+              smarter with an all-in-one, cloud-based solution<br />
+              designed to help you grow your business.
+            </p>
+            <div class="flex-container-with-reviews">
+              <!-- Star Review Section -->
+              <div class="review-section-with-stars">
+                <!-- Add SVG stars or use icon library if needed -->
+              </div>
+              <p class="review-info-text-style">Based on 200+ reviews on</p>
+            </div>
+            <div class="product-gallery">
+              <!-- Images/Icons related to product -->
+              <img src="assets/image_92084145.png" alt="Icon 1" class="icon-container" />
+              <img src="assets/image_8ee9d163.png" alt="Icon 2" class="image-container1" />
+              <img src="assets/image_22300ed2.png" alt="Icon 3" class="image-container" />
+            </div>
+          </div>
+          <img src="assets/image_b0ae5cc8.png" alt="Hero Image" class="hero-image-container" />
+        </div>
+        
+            <!-- Add bubble icon SVG -->
+          </div>
+        </div>
+      </div>
+      <div style="display: inline-block; width: 1920px; background: white" data-ignore="used only for top most containter width">
+        <div class="shop-results-section">
+          <div class="hero-section">
+            <div class="testimonial-section">
+              <p class="standout-heading">REAL SHOPS. REAL RESULTS.</p>
+              <p class="hero-text-styles">See why over 4,000 shops trust<br />SellerSquad.</p>
+              <p class="testimonial-text">Hear from real shop owners who made the switch to the leading repair shop<br />management software.</p>
+            </div>
+            <div class="vertical-centered-layout">
+              <div class="horizontal-image-gallery">
+                <img src="1.png" class="card-image-container" />
+                <img src="2.png" class="card-image-container" />
+                <img src="3.png" class="card-image-container" />
+              </div>
+              <div class="flex-row-container">
+                <div class="card-container">
+                  <div class="svg-container">
+                    <svg viewBox="0 0 24 24" x="0" y="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <defs>
+                        <clipPath id="clip3_0_3" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="24" height="24" fill="white" transform="translate(0, 0)" />
+                        </clipPath>
+                      </defs>
+                      <g id="682_frame" data-node-id="0:104" clip-path="url(#clip3_0_3)" xmlns="http://www.w3.org/2000/svg">
+                        <g id="683_frame" data-node-id="0:105">
+                          <path id="684_vector" data-node-id="0:106" d="M19,12h-14" stroke="#86899A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          <path id="685_vector" data-node-id="0:107" d="M12,19l-7,-7l7,-7" stroke="#86899A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <div class="card-container-with-title">
+                  <div class="svg-container">
+                    <svg viewBox="0 0 24 24" x="0" y="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <defs>
+                        <clipPath id="clip4_0_3" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="24" height="24" fill="white" transform="translate(0, 0)" />
+                        </clipPath>
+                      </defs>
+                      <g id="687_frame" data-node-id="0:109" clip-path="url(#clip4_0_3)" xmlns="http://www.w3.org/2000/svg">
+                        <g id="688_frame" data-node-id="0:110">
+                          <path id="689_vector" data-node-id="0:111" d="M5,12h14" stroke="#86899A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          <path id="690_vector" data-node-id="0:112" d="M12,5l7,7l-7,7" stroke="#86899A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  
+                </div>
+                
+              </div>
+              <section>
+                <div class="image">
+                 <img alt="Close-up of a mechanic's hands working on a car engine with a wrench" height="400" src="4.png" width="600"/>
+                </div>
+                <div class="content">
+                 <h1>
+                  Easily manage everything for your auto repair shop.
+                 </h1>
+                 <ul>
+                  <li>
+                   <i class="fas fa-tasks">
+                   </i>
+                   <div>
+                    <h3>
+                     Streamline Your Workflow
+                    </h3>
+                    <p>
+                     Create and manage jobs, estimates and POs; look up VINs; order parts, and more.
+                    </p>
+                   </div>
+                  </li>
+                  <li>
+                   <i class="fas fa-sync-alt">
+                   </i>
+                   <div>
+                    <h3>
+                     Get A 360-Degree View
+                    </h3>
+                    <p>
+                     Manage every auto repair job, technician, parts, and more - all in one place.
+                    </p>
+                   </div>
+                  </li>
+                  <li>
+                   <i class="fas fa-lightbulb">
+                   </i>
+                   <div>
+                    <h3>
+                     Know Your Business Better
+                    </h3>
+                    <p>
+                     Gain deeper insights and boost your profitability with visual dashboards and reporting tools.
+                    </p>
+                   </div>
+                  </li>
+                 </ul>
+                </div>
+               </section>
+               <div class="container">
+                <div class="header">
+                 <h1>
+                  Expertly crafted shop management software for your shop.
+                 </h1>
+                 <p>
+                  No matter what type of automotive service shop you run, SellerSquad can help you manage your business. Our shop management system offers an all-in-one solution made for your industry.
+                 </p>
+                </div>
+                <div class="grid">
+                 <div class="card">
+                  <img alt="Auto Repair Shop" height="200" src="https://storage.googleapis.com/a1aa/image/zpx55aCNaBaDFppDyf1QOItM7RKDSxtK3M3P1mH4YyCOKcyJA.jpg" width="300"/>
+                  <div class="card-content">
+                   <h3>
+                    Auto Repair Shops
+                   </h3>
+                   <p>
+                    SellerSquad helps auto repair shops run faster, work smarter, and grow their business.
+                   </p>
+                   <a href="#">
+                    Auto Repair Software
+                    <i class="fas fa-arrow-right">
+                    </i>
+                   </a>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <img alt="Tire Shop" height="200" src="https://storage.googleapis.com/a1aa/image/HSAwV2L62fXTQqxvSdrePkigpJ2kGMGzSPHnWaoeFnJ3owJnA.jpg" width="300"/>
+                  <div class="card-content">
+                   <h3>
+                    Tire Shops
+                   </h3>
+                   <p>
+                    Manage tire inventory, speed up estimates, and boost profits.
+                   </p>
+                   <a href="#">
+                    Tire Shop Software
+                    <i class="fas fa-arrow-right">
+                    </i>
+                   </a>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <img alt="Quick Lube" height="200" src="https://storage.googleapis.com/a1aa/image/tkSmfHrDHfuW8UE7sneRKHVkoNnl1VObZgQqekMBTis9RhTOB.jpg" width="300"/>
+                  <div class="card-content">
+                   <h3>
+                    Quick Lube
+                   </h3>
+                   <p>
+                    SellerSquad helps quick lube shops work faster, manage inventory, and more.
+                   </p>
+                   <a href="#">
+                    Oil Change Software
+                    <i class="fas fa-arrow-right">
+                    </i>
+                   </a>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <img alt="Heavy Duty Repair Shop" height="200" src="https://storage.googleapis.com/a1aa/image/DUwpcIe7dDxWcSaoLRLIKKDcfYfc02lon3vYhf2gmUDEShTOB.jpg" width="300"/>
+                  <div class="card-content">
+                   <h3>
+                    Heavy Duty Repair Shops
+                   </h3>
+                   <p>
+                    Easily work with multiple fleets and accept batch payments through our shop management system.
+                   </p>
+                   <a href="#">
+                    Heavy Duty Truck Repair Software
+                    <i class="fas fa-arrow-right">
+                    </i>
+                   </a>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <img alt="Wrap &amp; Detail Shop" height="200" src="https://storage.googleapis.com/a1aa/image/ZrVkWCxx8TqfPaO43kBRvYUCmqsycswVpyvPfchv1RadU4kTA.jpg" width="300"/>
+                  <div class="card-content">
+                   <h3>
+                    Wrap &amp; Detail Shops
+                   </h3>
+                   <p>
+                    Stay on top of the many services you offer with shop management software designed for detailing shops.
+                   </p>
+                   <a href="#">
+                    Auto Detailing Software
+                    <i class="fas fa-arrow-right">
+                    </i>
+                   </a>
+                  </div>
+                 </div>
+                 <div class="card">
+                  <img alt="Other Repair Shop" height="200" src="https://storage.googleapis.com/a1aa/image/lE6PIRt1fKU7RamVM3srwf9JCHtejn1pIvTkOpiPReTDShTOB.jpg" width="300"/>
+                  <div class="card-content">
+                   <h3>
+                    Other Repair Shops
+                   </h3>
+                   <p>
+                    From restoration to RVs and beyond, our shop management software has your repair shop covered.
+                   </p>
+                   <a href="#">
+                    Service Shop Management Software
+                    <i class="fas fa-arrow-right">
+                    </i>
+                   </a>
+                  </div>
+                 </div>
+                </div>
+               </div>
+               <div class="main-container">
+                <div class="header-section">
+                 <h1>
+                  Customer Support
+                 </h1>
+                 <p>
+                  We’re here for you every step of the way.
+                 </p>
+                </div>
+                <div class="support-container">
+                 <div class="support-details">
+                  <h2>
+                   CUSTOMER SUPPORT
+                  </h2>
+                  <h3>
+                   We’re here for you every step of the way.
+                  </h3>
+                  <p>
+                   Our friendly support team is here to partner with you on getting started.
+                  </p>
+                  <div class="support-options-container">
+                   <div class="support-option-item">
+                    <i class="fas fa-database">
+                    </i>
+                    <h4>
+                     Data Migration
+                    </h4>
+                    <p>
+                     No starting from scratch. We’ll move your customer data, invoices, and more over to SellerSquad.
+                    </p>
+                    <a href="#">
+                     Learn More
+                    </a>
+                   </div>
+                   <div class="support-option-item">
+                    <i class="fas fa-comments">
+                    </i>
+                    <h4>
+                     Live Support
+                    </h4>
+                    <p>
+                     Our Customer Support team is available 8 am–8 pm EST Monday–Friday for live support.
+                    </p>
+                    <a href="#">
+                     Chat with Us
+                    </a>
+                   </div>
+                   <div class="support-option-item">
+                    <i class="fas fa-question-circle">
+                    </i>
+                    <h4>
+                     Help Center
+                    </h4>
+                    <p>
+                     Find answers to our users’ most common questions.
+                    </p>
+                    <a href="#">
+                     Learn More
+                    </a>
+                   </div>
+                  </div>
+                 </div>
+                 <div class="support-image-container">
+                  <img alt="Team of people working on laptops in a collaborative environment" height="300" src="https://storage.googleapis.com/a1aa/image/uLAGGwzKNcIbONymY7kIxiX9bOmgwE8Y9OEHgDyEM32eLcyJA.jpg" width="500"/>
+                 </div>
+                </div>
+                <div class="demo-container">
+                 <h3>
+                  REQUEST A DEMO
+                 </h3>
+                 <p>
+                  SellerSquad is everything you need, no plugins or integrations required.
+                 </p>
+                 <a href="#">
+                  View all case studies
+                 </a>
+                </div>
+               </div>
+               <div class="footer">
+                <div class="footer-logo">
+                 <img alt="Company Logo" height="50" src="https://storage.googleapis.com/a1aa/image/wQQZ8z5pXtYmFNbvPWRTOgv4epS5jeumZcuaLfz12CyWCxJnA.jpg" width="50"/>
+                 <button>
+                  Language: English
+                 </button>
+                 <div class="social-icons">
+                  <a href="#">
+                   <i class="fab fa-twitter">
+                   </i>
+                  </a>
+                  <a href="#">
+                   <i class="fab fa-instagram">
+                   </i>
+                  </a>
+                  <a href="#">
+                   <i class="fab fa-facebook-f">
+                   </i>
+                  </a>
+                 </div>
+                 <div class="contact-info">
+                  <p>
+                   © SellerSquad Sitemap
+                  </p>
+                  <p>
+                   660 Townsend Street, Suite 500
+                   <br/>
+                   San Francisco, CA 94103
+                   <br/>
+                   USA
+                  </p>
+                  <p>
+                   +1 (833) 972-8766
+                  </p>
+                 </div>
+                </div>
+                <div class="footer-column">
+                 <h3>
+                  PRODUCT
+                 </h3>
+                 <a href="#">
+                  Pro
+                 </a>
+                 <a href="#">
+                  Premium
+                 </a>
+                 <a href="#">
+                  Pricing
+                 </a>
+                </div>
+                <div class="footer-column">
+                 <h3>
+                  SOLUTIONS
+                 </h3>
+                 <a href="#">
+                  Auto Repair
+                 </a>
+                 <a href="#">
+                  Tire Shops
+                 </a>
+                 <a href="#">
+                  Oil Change
+                 </a>
+                 <a href="#">
+                  Heavy Duty
+                 </a>
+                 <a href="#">
+                  Wrap and Detail
+                 </a>
+                 <a href="#">
+                  Marine Repair
+                 </a>
+                 <a href="#">
+                  RV Repair
+                 </a>
+                 <a href="#">
+                  Nonprofits
+                 </a>
+                 <a href="#">
+                  Tutorials and Education
+                 </a>
+                 <a href="#">
+                  Local Businesses
+                 </a>
+                 <a href="#">
+                  Creators-of-all-kinds
+                 </a>
+                </div>
+                <div class="footer-column">
+                 <h3>
+                  RESOURCES
+                 </h3>
+                 <a href="#">
+                  Blog
+                 </a>
+                 <a href="#">
+                  Shop Legends
+                 </a>
+                 <a href="#">
+                  Help Center &amp; FAQ
+                 </a>
+                 <a href="#">
+                  App Directory
+                 </a>
+                 <a href="#">
+                  News Room
+                 </a>
+                 <a href="#">
+                  Shop Performance
+                 </a>
+                 <a href="#">
+                  Webinars
+                 </a>
+                 <a href="#">
+                  Loss calculator
+                 </a>
+                </div>
+                <div class="footer-column">
+                 <h3>
+                  COMPANY
+                 </h3>
+                 <a href="#">
+                  About
+                 </a>
+                 <a href="#">
+                  Press
+                 </a>
+                 <a href="#">
+                  Careers
+                 </a>
+                 <a href="#">
+                  Privacy
+                 </a>
+                 <a href="#">
+                  Policy &amp; Terms
+                 </a>
+                 <a href="#">
+                  Privacy Preferences
+                 </a>
+                 <a href="#">
+                  Accessibility
+                 </a>
+                 <a href="#">
+                  Impressum
+                 </a>
+                </div>
+               </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </body>
+</html>

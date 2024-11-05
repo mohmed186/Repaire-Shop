@@ -1,0 +1,6 @@
+<script>
+function toggleMobileMenu() {
+    const mobileMenu = document.getElementById("mobile-menu");
+    mobileMenu.classList.toggle("active");
+{"}"}
+</script>
